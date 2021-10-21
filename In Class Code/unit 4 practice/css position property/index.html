@@ -18,9 +18,33 @@
         Setting the <i>top, bottom, left, and right</i> properties of a <b>relatively-positioned</b> element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
     </div>
 
-    <div class=second-relative>
+    <div class="second-relative">
         <h1>Second Relative</h1>
         Setting the <i>top, bottom, left, and right</i> properties of a <b>relatively-positioned</b> element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
     </div>
+
+   
+
+    <div class="fixed">
+        <h1>Fixed</h1>
+        A fixed eleement is positioned relative to the view port, which means it always stays in the same place EVEN if the page is scrolled. As with relative <B>the top, right, bottom and left properties are used and needed for the final position.</B>
+    </div>
+
+
+    <div class="third-relative">
+        
+        <h1>Nearest ancestor element to the absolutely positioned element</h1>
+
+        This element is relateively positioned. If this elemenet was positioned <i>static</i> its absolutely positioned child would escape and be positioned relative to the document body.
+        
+        <div class="absolute">
+            Absolute behaves like <i>fixed</i> except it's <i>relative</i> to it's nearest positioned ancestor element, instead of relative to the viewport. If an absolutely positioned element has no positioned ancestors it uses the document body, and still moves along the page scrolling. <b>Remember</b> a positioned element is one whose position is anything but <i>static</i>.
+            
+            <h1>Absolute</h1>
+            
+            This element is absolutely-positioned. It's relative to its parent.
+        </div>
+    </div>
+
 </body>
 </html>

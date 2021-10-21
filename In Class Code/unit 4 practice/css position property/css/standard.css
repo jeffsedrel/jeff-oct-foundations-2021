@@ -37,3 +37,48 @@ body {
     box-sizing: border-box;
 
 }
+
+.fixed {
+    border: 1px solid yellow;
+    background-color: white;
+    padding: 5px;
+    width: 20vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.absolute {
+    border: 1px solid hotpink;
+    width: 30vw;
+    height: 30vh;
+    background-color: white;
+    padding: 5px;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    line-height: .8;
+
+
+}
+
+.third-relative {
+    position: relative;
+    border: 1px solid orange;
+    padding: 5px;
+    width: 60vw;
+    height: 70vh;
+
+}
+
+.sticky-element {
+    background-color: yellow;
+    padding: 50px;
+    position: sticky;
+    top:0;
+    
+}
+
+.sticky-example {
+    font-size: 30px;
+}
