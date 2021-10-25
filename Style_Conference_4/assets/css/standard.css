@@ -248,8 +248,12 @@ p a {
 
 }
 
-.tagline {
-    margin: 66px 0 22px 0; 
+
+
+
+/* nav */
+
+.nav {
     text-align: right;
 }
 
@@ -258,12 +262,6 @@ p a {
     font-weight: 400;
     letter-spacing: .5px;
     text-transform: uppercase;
-}
-
-/* nav */
-
-.nav {
-    text-align: right;
 }
 
 /* buttons */
@@ -300,6 +298,12 @@ p a {
     font-weight: 100;
 }
 
+.tagline {
+    margin: 66px 0 22px 0; 
+    text-align: right;
+}
+
+
 /* header */
 .logo {
     border-top: 4px solid #d7dae2;
@@ -309,25 +313,6 @@ p a {
     padding-right: 1em;
 }
 
-
-
-
-/* footer */
-
-.primary-footer {
-    padding-bottom: 44px;
-    padding-top: 44px;
-    color: #6c89db;
-    font-size: 14px;
-    float: left;
-    font-weight: 400;
-
-}
-
-.primary-footer small {
-    float: left;
-    font-weight: 400;
-}
 
 
 /*===========*/
@@ -356,4 +341,21 @@ p a {
 .col-2-3 {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+/* footer */
+
+.primary-footer {
+    padding-bottom: 44px;
+    padding-top: 44px;
+    color: #6c89db;
+    font-size: 14px;
+    float: left;
+    font-weight: 400;
+
+}
+
+.primary-footer small {
+    float: left;
+    font-weight: 400;
 }
