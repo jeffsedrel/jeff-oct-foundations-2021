@@ -207,6 +207,7 @@ GRID
 /* Body */
 
 body {
+    background-color: #11073fe3;
     color:  #273a6e;
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
