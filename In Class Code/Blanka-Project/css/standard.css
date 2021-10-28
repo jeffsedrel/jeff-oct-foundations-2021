@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    font-size: 3vh;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:#221c5a;
+    padding: 35px;
+    z-index: 2;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+header>span {
+    margin-left:  10vw;
+    font-size: 2vh;
+    margin-top: 6px;
+}
+
+nav {
+    margin-right: 7vw;
+}
+
+nav>a {
+    color: white;
+    font-size: 2vh;
+    text-decoration: none;
+    margin: 5.5px;
+}
+
+nav>a:hover {
+    color:#ff00cc;
+}
+
+/* Main Content */
+
+.main-content {
+    
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    background-image: url("../images/background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'League Script', cursive;
+    font-size: 8rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+p {
+    position:absolute;
+    top: 55%;
+    left: 35%;
+    text-align: center;
+    font-size: 2rem;
+  
+}
+
+#hire {
+    position: absolute;
+    top:80%;
+    left:40%;
+    background-color: #ff00cc;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.main-content>a {
+    color: white;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.main-content>a:hover {
+    background-color: #221c5a
+}
