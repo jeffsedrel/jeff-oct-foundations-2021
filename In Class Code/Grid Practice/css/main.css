@@ -13,6 +13,11 @@
 .item5{
     grid-area:footer;
 }
+
+.item1, .item2, .item3, .item4, .item5{
+    border: solid black 2px;
+}
+
 .grid-container{
     display: grid; /* turns this into a grid */
     grid-template-areas: 
@@ -21,5 +26,6 @@
     'menu footer footer footer footer footer';
     grid-gap: 10px;
     background-color: #2196f3;
+
 
 }
