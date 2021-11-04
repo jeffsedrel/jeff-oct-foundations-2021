@@ -12,7 +12,22 @@
 <body>
     <form>
 
+        <p>What is your account username?</p>
 
+        <label for="username">Username</label>
+
+        <input type="text" name="username">
+
+        <br> <br>
+
+        <textarea name="concern" placeholder="Tell us your problem"></textarea>
+
+        <br> <br>
+
+        <fieldset>
+            <legend>background information</legend>
+
+        <p>What is your employment status?</p>
 
         <input type="radio" name="employment" value="full-time" checked> Full Time
         <input type="radio" name="employment" value="part-time"> Part Time
@@ -21,13 +36,15 @@
         
         <br><br><br>
 
+        <p>When did you start at this employer?</p>
+
         <input type="checkbox" name="months-employed" value="January"> January
         <input type="checkbox" name="months-employed" value="February"> February
         <input type="checkbox" name="months-employed" value="March"> March
 
         <br><br><br>
         <label for="cars">Choose a Car</label>
-        <select name="cars" id="cars">
+        <select name="cars" id="cars" required>
             <optgroup label="Swedish Cars">
 
             <option value="Volvo">Volvo</option>
@@ -37,6 +54,7 @@
             <option value="Mercedes">Mercedes</option>
             <option value="Audi">Audi</option>
             </optgroup>
+        </fieldset>
         </select>
         <br><br>
         <input type="submit" value="submit"> 
