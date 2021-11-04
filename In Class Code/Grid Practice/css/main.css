@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .item1{
     grid-area:header;
 }
@@ -14,8 +18,12 @@
     grid-area:footer;
 }
 
-.item1, .item2, .item3, .item4, .item5{
-    border: solid black 2px;
+.grid-container > div{ /* applies styles to items within the grid container */
+    border: solid black 8px;
+    opacity: 0.8;
+    text-align: center;
+    padding: 0.7em;
+    font-size: 4vh;
 }
 
 .grid-container{
@@ -26,6 +34,8 @@
     'menu footer footer footer footer footer';
     grid-gap: 10px;
     background-color: #2196f3;
+    box-sizing: border-box;
+    height: 100vh;
 
 
 }

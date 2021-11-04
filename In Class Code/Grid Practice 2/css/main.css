@@ -1,0 +1,30 @@
+.item1{
+    grid-area: header;
+}
+
+.item2{
+    grid-area: menu;
+}
+
+.item3{
+    grid-area: main;
+}
+
+.item4{
+    grid-area: footer;
+}
+
+.grid-container > div { /* applies styles to grid items */
+    border: solid black 4px;
+}
+
+.grid-container { /*displaying content as a grid */
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'menu main main main'
+    'menu footer footer footer';
+    margin: 10px;
+    background-color: orange;
+    box-sizing:border-box;
+}
