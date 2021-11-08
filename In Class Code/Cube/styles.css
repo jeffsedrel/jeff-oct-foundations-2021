@@ -1,0 +1,86 @@
+* {
+    margin:0%;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 50vmin;
+    width: 50vmin;
+    position: relative;
+    perspective: 100vmin;
+    top: 25vmin;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:aquamarine;
+
+}
+
+#cube {
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    transform-style: preserve-3d;
+    animation-name: cube-spin;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.side {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 5px solid black;
+    color: rgb (255,255,255,.8);
+    font-size: 50vmin;
+    text-align: center;
+    line-height: 50vmin;
+
+}
+
+#front {
+    transform: rotateY(0deg) translateZ(25vmin);
+    background-color: rgba(255,0,0,.8)
+
+}
+
+#back {
+    transform: rotateY(180deg) translateZ(25vmin);
+    background-color: rgba(0,255,0,.8)
+
+}
+
+#right {
+    transform: rotateY(90deg) translateZ(25vmin);
+    background-color: rgba(0,0,255,.8)
+}
+
+#left {
+    transform: rotateY(-90deg) translateZ(25vmin);
+    background-color: rgba(255,0,255,.8)
+}
+
+#top {
+    transform: rotateX(90deg) translateZ(25vmin);
+    background-color: rgba(0,255,255,.8)
+}
+
+#bottom {
+    transform: rotatex(-90deg) translateZ(25vmin);
+    background-color: rgba(255,255,0,.8)
+}
+
+@keyframes cube-spin{
+    0% {transform: rotateY(0deg);}
+    3.33% {transform: rotateY(90deg);}
+    16.66% {transform: rotateY(90deg)}
+    20% {transform: rotateY(180deg);}
+    33.33% {transform: rotateY(180deg);}
+    36.66% {transform: rotateY(270deg);}
+    50% {transform: rotateY(270deg);}
+    53.33% {transform: rotateX(90deg);}
+    66.66% {transform: rotateX(90deg);}
+    70% {transform: rotateX(-90deg);}
+    83.33% {transform: rotateX(-90deg);}
+    88.66% {transform: rotateY(0deg);}
+    100% {transform: rotateY(0deg);}
+}
