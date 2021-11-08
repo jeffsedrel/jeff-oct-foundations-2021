@@ -1,0 +1,13 @@
+/* Scale */
+.square {
+    background: darkturquoise;
+    border-radius: 5px;
+    height: 100px;
+    margin: 100px;
+    transition: transform 1s;
+    width: 100px;
+  }
+  .square:hover {
+    transform: scale(2);
+  }
+  

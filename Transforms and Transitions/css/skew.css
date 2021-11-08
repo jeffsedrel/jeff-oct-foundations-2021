@@ -1,0 +1,12 @@
+/* Skew */
+.square {
+    background: Khaki;
+    border-radius: 5px;
+    height: 150px;
+    margin: 100px;
+    transition: transform 1s;
+    width: 150px;
+  }
+  .square:hover {
+    transform: skewX(-20deg);
+  }
