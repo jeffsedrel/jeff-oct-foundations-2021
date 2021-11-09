@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../My First HTML"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Foundations_Oct_2021"
+	}
+}
