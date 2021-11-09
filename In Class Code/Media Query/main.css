@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    font-size: 16pt;
+}
+body{
+    background-color: lavender;
+}
+h2 {
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
+
+p {
+    font-size: 14pt;
+    margin-bottom: 20px;
+}
+ul {
+    display:block;
+}
+
+@media screen and (max-width: 760px)
+{
+    h2 {
+        background-color:aqua;
+    }
+    p {
+        text-transform: capitalize;
+    }
+
+    ul {
+        display: none;
+    }
+}
