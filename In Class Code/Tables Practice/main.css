@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    font-size: 2vh;
+
+}
+
+body {
+    background-color: lavender;
+}
+
+table {
+   
+    display: flex;
+    justify-content: center;
+}
+   
+td {
+    border-collapse: collapse; 
+    border: 1px solid black;
+    border-spacing: 4px;
+    background-color: beige;
+}
+
+td:nth-child(even) {
+    background-color: white;
+}
+
+th {
+    margin-right: 10px;
+    background-color: beige;
+}
+
+.footer {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+
+}
