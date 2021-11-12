@@ -5,7 +5,7 @@ body {
     font-family: 'Mukta', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Zen Antique Soft', serif;
-    font-size: 24px;
+    font-size: 18px;
     margin: 0;
     
 }
@@ -19,7 +19,7 @@ header{
 
 
 #header-nav {
-    background-color: rgb(41, 35, 44);
+    background-color: rgb(50, 41, 54);
     padding: 10px;
     width: 100%;
     height: 10vh;
@@ -27,7 +27,9 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    position:fixed;
+    /*position:fixed;*/
+    border: 2px solid rgb(57, 48, 61);
+    
 
     
 }
@@ -52,6 +54,7 @@ a:hover {
     padding: 100px, 100px, 100px, 100px;
     margin: 0 auto;
     text-align: center;
+    
 }
 
 
@@ -75,6 +78,10 @@ a:hover {
     align-items: center;
     position:static;
 
+}
+
+#bike:hover {
+    transform: rotate(5deg) scale(.75);
 }
 
 footer {
