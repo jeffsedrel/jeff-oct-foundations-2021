@@ -1,0 +1,14 @@
+<h2>JavaScript Functions</h2>
+
+<p id="demo"></p>
+
+<script>
+//This is making a change to the HTML doc, the toCelius reference is calling our function to be used
+document.getElementById("demo").innerHTML =
+"The temperature is " + toCelsius(32) + " Celsius";
+
+//This is our function, within the parenthesis is our argument/value that we are going to manipulate
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+</script>

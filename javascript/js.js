@@ -33,3 +33,22 @@ var fullName = student.lastName + ',' + student.firstName;
 //concatenation is when we add two or more strings and/or variables together
 
 "value" + "value" + "value" + {student}
+
+//IF defines a condition needed to met in order for a line of code to execute
+
+
+
+var a = 2;
+var b = 3;
+
+if (a > b) {
+    console.log ('2 is greater than 3')
+};
+
+else if (a < b) {
+    cosole.log ('3 is greater than 2')
+};
+
+else if (a == b) {
+    console.log ('2 is equal to 3')
+};
