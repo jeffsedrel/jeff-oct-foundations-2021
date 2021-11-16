@@ -22,10 +22,26 @@ else if (newUser.lastName !== "Smith") {
 // for (var i = 2; i < cities.length; cities.pop)
 //     console.log(cities)
 
-var fruits = ['apple', 'orange', 'watermelon'];
-var i = 0;
+// var fruits = ['apple', 'orange', 'watermelon'];
+// var i = 0;
 
-while (i < fruits.length) {
-    console.log("The first fruit value is " + i + '=' + fruits[i]);
-    i++;
-}
+// while (i < fruits.length) {
+//     console.log("The first fruit value is " + i + '=' + fruits[i]);
+//     i++;
+// }
+
+// var user= 'jsmith';
+// function change () {
+//     user = 'johnsmith';
+// }
+// console.log(user);
+// change();
+// console.log(user);
+
+//forEach example:
+
+let fruits = ['apples','oranges','bananas'];
+
+fruits.forEach(function(value) {
+console.log(fruits);
+});

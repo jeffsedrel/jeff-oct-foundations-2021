@@ -14,6 +14,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/standard.css">
+        
+          
+
     </head>
     <body>
         <header>
@@ -32,7 +35,7 @@
             <br>
             <br>
         <section>
-            <div class="containerart">
+            <div class="container">
                 <h2>Art</h2>
                 <p>I received my Bachelors Degree in Studio Art from the University of Nebraska at Omaha in 2012. I have participated in multiple solo and group shows, and my work has been collected nationwide.
                     <br>
@@ -44,25 +47,33 @@
         </section>
 
             <br>
-        <section class="image">
-           <div class="painting">
+        <section class="imgcontainer">   
+            <div class="row">
+                <div class="column">
+                  <img src="images/flowerpainting.jpg" alt="Bouquet 4, 2021" onclick="myFunction(this);" width="85%" height=85%> 
+                </div><!----><div class="column">
+                  <img src="images/painting.jpg" alt="Dragon Lily, 2021"  onclick="myFunction(this);"
+                  width=85% height=85%>
+                </div><!----><div class="column">
+                  <img src="images/painting3.jpg" alt="Bouquet 6, 2021" onclick="myFunction(this);"
+                  width=85% height=85%>
+                </div><!----></div>
+              
 
-            <img src="images/painting3.jpg" class="painting1 painting" 
-            height= 150
-            width= 121
-           >
-
-    
-            <img src="images/painting.jpg"
-            height= 150
-            width= 125 class="painting2 painting">
-
-            <img src="images/flowerpainting.jpg"
-            height= 150
-            width= 117 class="painting3 painting">
-            </div>
-        </section>
-        
+                <p>click to expand </p>
+              <!-- The expanding image container -->
+              <div class="containerart">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+              
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width:100%">
+              
+                <!-- Image text -->
+                <div id="imgtext"></div>
+              </div>
+            </section> 
+            <script src="js/js.js"></script>
 
        
 
@@ -72,19 +83,20 @@
 
                 <h3>Solo</h3>
                 <ul>
-                    <li>Flowers on the Wall<br> Project Project, September 2021</li>
-                    <li>New Paintings <br> Garden of the Zodiac Gallery, November 2019</li>
-                    <li>Bristle <br>
+                    <li><b>Flowers on the Wall</b><br> Project Project, September 2021</li>
+                    <li><b>New Paintings</b><br> Garden of the Zodiac Gallery, November 2019</li>
+                    <li><b>Bristle</b><br>
                      Petshop Gallery, August 2017</li>
 
                 </ul>
 
                 <h3>Group</h3>
                 <ul>
-                    <li>Bemis Art Auction, <br>Bemis Center for Contemporary Arts, October 2021</li>
-                    <li>OEAA Awards Showcase, 
+                    <li><B>Bemis Art Auction</B>
+                        <br>Bemis Center for Contemporary Arts, October 2021</li>
+                    <li><B>OEAA Awards Showcase</B> 
                     <br>RBR G, January 2021</li>
-                    <li>Sophie Newell, Trent Grooms, Jeff Sedrel<br>
+                    <li><B>Sophie Newell, Trent Grooms, Jeff Sedrel</B><br>
                     Landlock Gallery, October 2020</li> <br>
                 </ul>
 
@@ -101,10 +113,20 @@
         </section>
         
         <br>
-        
+      
 
         <footer>
             <small><h6>&copy; Jeff Sedrel 2021</h6></small>
         </footer>
+    
+        <script src="js/js.js">
+            function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+            }
+            </script>
     </body>
 </html>
