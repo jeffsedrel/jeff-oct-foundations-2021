@@ -134,7 +134,7 @@ p {
     position: absolute;
     top: 0%;
     right: 5%;
-    color: black;
+    color: rgb(78, 78, 78);
     font-size: 40px;
     cursor: pointer;
   }
@@ -201,7 +201,7 @@ p {
 }
 
 #bolopic:hover {
-    transform: scale(3);
+    transform: scale(2);
     transition: all 5.3s;
     margin-top: 10px;
 
