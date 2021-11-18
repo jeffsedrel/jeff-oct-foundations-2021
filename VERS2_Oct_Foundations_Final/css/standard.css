@@ -36,25 +36,41 @@ header{
     position:fixed;
     border: 2px solid rgb(57, 48, 61);
     
-
-    
 }
 
-a {
+#header-nav a {
     color: #fae4ff;
     text-decoration: none;
 }
 
-a:hover {
+#header-nav a:hover {
     color: #a9b2b9;
     
+}
+
+#header-nav a:active {
+    color: white;
+}
+
+h1 {
+    padding-top: 3vh;
+    padding-right: 3vw;
+    padding-left: 3vw; 
+}
+
+h1::first-line { 
+    font-size: xx-large
+
 }
 
 h2 {
     padding-top: 3vh;
     padding-right: 3vw;
-    padding-left: 3vw;
-    
+    padding-left: 3vw; 
+}
+
+h2::first-letter {
+    font-size: xx-large;
 }
 
 p {
@@ -72,7 +88,6 @@ p {
     margin: 0 auto;
     text-align: center;
     color: rgb(80, 79, 79);
-    border-radius: 2%;
 }
 
 
@@ -83,13 +98,13 @@ p {
     margin: 0 auto;
     text-align: center;
     color: whitesmoke;
-    border-radius: 2%;
+    border-radius: 4%;
     
 }
 
 /*ART*/
 
-/* The grid: Four equal columns that floats next to each other */
+/* grid: columns that float next to each other */
 .column {
     float: left;
     width: 25%;
@@ -97,7 +112,7 @@ p {
     margin-left:4%;
   }
   
-  /* Style the images inside the grid */
+  /* style the images inside the grid */
   .column img {
     opacity: 0.8;
     cursor: pointer;
@@ -107,20 +122,20 @@ p {
     opacity: 1;
   }
   
-  /* Clear floats after the columns */
+  /* clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* The expanding image container (positioning is needed to position the close button and the text) */
+  /* container for expanded image  */
   .containerart {
     position: relative;
     display: none;
   }
   
-  /* Expanding image text */
+  /* text with expanded image */
   #imgtext {
     position: absolute;
     bottom: 0;
@@ -129,7 +144,7 @@ p {
     font-size: 18px;
   }
   
-  /* Closable button inside the image */
+  /* button to close expanded image */
   .closebtn {
     position: absolute;
     top: 0%;
@@ -138,14 +153,6 @@ p {
     font-size: 40px;
     cursor: pointer;
   }
-
-
-#dragonlily {
-    color: white;
-}
-
-
-
 
 
 
@@ -179,9 +186,12 @@ p {
     text-align: left;
     padding-bottom: 10px;
     margin: 10px;
-
 }
 
+.shows li::first-line {
+    color: #f9e9e9;
+    font-size: x-large;
+  }
 
 
 /*FOOD*/
@@ -196,14 +206,26 @@ p {
     font-size: 75%;
 }
 
+#porktitle {
+    font-size: xx-large;
+}
+
+#directtitle {
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+
+
 #bolopic {
     padding-top: 10px;
 }
 
 #bolopic:hover {
-    transform: scale(2);
+    transform: scale(1.4);
     transition: all 5.3s;
     margin-top: 10px;
+    position:relative;
 
 }
 /* ABOUT */
@@ -256,6 +278,7 @@ p {
     transform: scale(1.10);
 }
 
+/* Footer */
 footer {
     text-align: center;
     height: 2vh;
